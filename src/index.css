@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+div {
+  white-space: pre-wrap;
+}
+
+@layer components {
+  .custome_ani_in {
+    animation: ani 0.7s 1;
+  }
+  .cusome_pc_ani_in {
+    animation: cusome_pc 0.7s 1;
+  }
+  .custome_ani_out {
+    animation: ani_out 0.7s 1;
+  }
+  .cusome_pc_ani_out {
+    animation: cusome_pc_out 0.7s 1;
+  }
+
+  @keyframes ani {
+    0% {
+      bottom: -60vh;
+    }
+    100% {
+      bottom: 0em;
+    }
+  }
+
+  @keyframes cusome_pc {
+    0% {
+      left: -25em;
+    }
+    100% {
+      left: 0em;
+    }
+  }
+
+  @keyframes ani_out {
+    0% {
+      bottom: 0em;
+    }
+    100% {
+      bottom: -60vh;
+    }
+  }
+
+  @keyframes cusome_pc_out {
+    0% {
+      left: 0em;
+    }
+    100% {
+      left: -25em;
+    }
+  }
+}
