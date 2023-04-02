@@ -17,7 +17,7 @@ function App() {
   const [hamtog, setHamTog] = useState(true);
   const refinput = useRef();
   // ur backend url here
-  const url = "";
+  const url = "https://api-ethio-gpt.vercel.app";
 
   const [promocode, setPromoCode] = useState(null);
 
@@ -188,7 +188,7 @@ function App() {
       </div>
       {show && (
         <div
-          className={`border-t-2 pb-1  fixed border-gray-900 sm:left-0 sm:h-screen sm:top-0 bottom-0 sm:w-[25em] w-screen h-[55vh] bg-gray-700 sm:rounded-none rounded-t-2xl overflow-hidden text-gray-300 ${
+          className={`border-t-2 pb-1  fixed border-gray-900 sm:left-0 sm:h-screen sm:top-0 bottom-0 sm:w-[25em] w-screen h-[60vh] bg-gray-700 sm:rounded-none rounded-t-2xl overflow-hidden text-gray-300 ${
             !aniin
               ? " sm:cusome_pc_ani_in custome_ani_in"
               : " sm:cusome_pc_ani_out custome_ani_out"
